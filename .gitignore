@@ -6,3 +6,4 @@ pyenv.cfg
 django_rock_paper_scissors_game/
 *.pyc
 *.sqlite3
+__pycache__/

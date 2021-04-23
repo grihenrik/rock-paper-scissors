@@ -1,1 +1,17 @@
-[{"model": "game.playerchoice", "pk": 1, "fields": {"user_choice": "Rock"}}, {"model": "game.playerchoice", "pk": 2, "fields": {"user_choice": "Paper"}}, {"model": "game.playerchoice", "pk": 3, "fields": {"user_choice": "Scissors"}}]
+[
+  {
+    "model": "game.playerchoice",
+    "pk": 1,
+    "fields": { "user_choice": "Rock" }
+  },
+  {
+    "model": "game.playerchoice",
+    "pk": 2,
+    "fields": { "user_choice": "Paper" }
+  },
+  {
+    "model": "game.playerchoice",
+    "pk": 3,
+    "fields": { "user_choice": "Scissors" }
+  }
+]
