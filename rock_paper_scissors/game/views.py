@@ -13,7 +13,7 @@ VICTORIES = {
     }
 
 def get_computer_selection():
-    selection = random.randint(2, 4)
+    selection = random.randint(1,3)
     return selection
 
 def index(request):
