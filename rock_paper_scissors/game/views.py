@@ -35,5 +35,3 @@ def user_choice(request, choice_id):
     except PlayerChoice.DoesNotExist:
         raise Http404("Choice does not exist")
     return render(request, 'game/result.html',{"users_choice":uc,"computer_choice":pc,"win_loose":resp})
-    #return HttpResponse("%(uc,pc,resp))
-# render(request, 'polls/detail.html', {'question': question})
