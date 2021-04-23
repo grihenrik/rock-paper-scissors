@@ -19,25 +19,3 @@ class PlayerChoice(models.Model):
           return self.user_choice
 
 
-class Score(models.Model):
-    user_choice = models.CharField(
-      max_length=NUMBER_OF_CHOICES,
-      choices=[(tag, tag.value) for tag in PlayerAction]
-    )
-    computer_choice = models.CharField(
-      max_length=NUMBER_OF_CHOICES,
-      choices=[(tag, tag.value) for tag in PlayerAction]
-    )
-    created = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-    )
-
-    def __str__(self):
-        return [self.user_choice,
-                self.computer_choice,
-                self.created]
-    class Meta:
-        ordering = ['-created']
-
