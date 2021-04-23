@@ -3,3 +3,4 @@ bin/
 include/
 lib/
 pyenv.cfg
+django_rock_paper_scissors_game/

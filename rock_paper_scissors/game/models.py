@@ -9,9 +9,14 @@ NUMBER_OF_CHOICES = 3
 
 
 class PlayerAction(IntEnum):
-    Rock = 0
-    Paper = 1
-    Scissors = 2
+    Rock = 2
+    Paper = 3
+    Scissors = 4
+
+class PlayerChoice(models.Model):
+    user_choice = models.CharField(max_length=50)
+    def __str__(self):
+          return self.user_choice
 
 
 class Score(models.Model):
@@ -33,5 +38,6 @@ class Score(models.Model):
         return [self.user_choice,
                 self.computer_choice,
                 self.created]
-        
+    class Meta:
+        ordering = ['-created']
 
